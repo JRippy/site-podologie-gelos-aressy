@@ -14,7 +14,7 @@ Site statique : `index.html` + dossier `images/`. Aucune installation nécessair
    git push -u origin main
    ```
 3. GitHub : Settings > Pages > Source : branche `main`, dossier `/ (root)`.
-4. Le site apparaît sur `https://TON-COMPTE.github.io/podologie-gelos-aressy/`.
+4. Le site apparaît sur `https://jrippy.github.io/site-podologie-gelos-aressy/`.
 
 ## Nom de domaine
 Ajouter un fichier `CNAME` contenant le domaine (ex. `podologie-gelos.fr`), puis configurer le DNS chez le registrar.
