@@ -65,9 +65,12 @@ details .tag{display:inline-block;margin:0 0 1rem;color:var(--oak);font-weight:6
 .lieu .pics img:first-child{grid-column:1/-1;aspect-ratio:16/10}
 .lieu .txt{padding:1.4rem 1.4rem 1.6rem}
 .lieu address{font-style:normal;color:var(--muted);margin-bottom:1rem}
-.noms{list-style:none;padding:0;margin:1.8rem 0 0;display:grid;gap:1rem}
+.eq{display:grid;gap:2rem;align-items:center;margin-top:1.5rem}
+@media (min-width:900px){.eq{grid-template-columns:.85fr 1.15fr}}
+.groupe{margin:0;border-radius:18px;overflow:hidden;max-width:460px;justify-self:center}
+.groupe img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.noms{list-style:none;padding:0;margin:1.2rem 0 0;display:grid;gap:1rem}
 @media (min-width:640px){.noms{grid-template-columns:repeat(2,1fr)}}
-@media (min-width:980px){.noms{grid-template-columns:repeat(4,1fr)}}
 .noms li{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:1.4rem;display:grid;gap:.2rem;justify-items:start}
 .noms b{font:500 1.15rem "Bricolage Grotesque",sans-serif}
 .noms small{color:var(--muted)}
@@ -147,6 +150,8 @@ footer{padding:1.8rem 0 2.5rem;color:var(--muted);font-size:.95rem}
 <section class="equipe" id="equipe">
 <div class="wrap">
 <h2>L'équipe</h2>
+<div class="eq"><figure class="groupe"><img src="images/equipe.jpg" alt="Les quatre pédicures-podologues du cabinet en blouse blanche"></figure>
+<div>
 <p>Quatre pédicures-podologues se partagent les deux cabinets, avec le soutien d'une secrétaire qui répond à vos appels.</p>
 <ul class="noms">
 <li><span class="ini" aria-hidden="true">SJ</span><b>Stéphanie Jouanlong Bernadou</b><small>Pédicure-podologue</small></li>
@@ -154,6 +159,8 @@ footer{padding:1.8rem 0 2.5rem;color:var(--muted);font-size:.95rem}
 <li><span class="ini" aria-hidden="true">LB</span><b>Louis Bricaud</b><small>Pédicure-podologue</small></li>
 <li><span class="ini" aria-hidden="true">AC</span><b>Axel Canton</b><small>Pédicure-podologue</small></li>
 </ul>
+</div>
+</div>
 </div>
 </section>
 
